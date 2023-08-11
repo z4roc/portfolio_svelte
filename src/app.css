@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  @apply bg-gradient-to-r from-purple-800 to-blue-950;
+}
+
+.navbar {
+  @apply bg-opacity-20 backdrop-blur-lg rounded-md border-1;
+}
