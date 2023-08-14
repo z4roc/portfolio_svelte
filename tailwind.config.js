@@ -10,19 +10,22 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'ubuntu': ['Ubuntu', 'sans-serif'],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
       borderWidth: {
         1: "1px",
       },
       colors: {
-        'text': '#eff2e8',
-        'background': '#030302',
-        'primary': '#3c3257',
-        'secondary': '#190b42',
-        'accent': '#6d5b9f',
+        text: "#eff2e8",
+        background: "#030302",
+        primary: "#3c3257",
+        secondary: "#190b42",
+        accent: "#6d5b9f",
       },
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    base: false,
+  },
 };

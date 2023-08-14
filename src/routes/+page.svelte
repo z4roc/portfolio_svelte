@@ -1,11 +1,19 @@
+<script lang="ts">
+  import CardItem from "../CardItem.svelte";
+
+  let flutterIcon = "./images/icons/flutter.png"
+  let csharpIcon = "./images/icons/csharp.png"
+  let nodeIcon = "./images/icons/nodejs.png"
+</script>
+
 <section
   id="landing"
-  class="h-screen relative overflow-hidden flex items-center justify-center"
+  class="h-screen -mt-10 relative overflow-hidden flex items-center justify-center"
 >
   <div class="-top-10">
-    <h3 class="text-4xl p-2 font-semibold">Hi! I'm</h3>
-    <h1 class="text-8xl p-4 font-bold">Arthur Aktamirov</h1>
-    <h3 class="text-2xl p-2">Fullstack Developer</h3>
+    <h3 class="sm:text-4xl text-2xl p-2 font-semibold">Hi! I'm</h3>
+    <h1 class="sm:text-8xl text-4xl p-4 font-bold bg-gradient-to-r from-cyan-300 to-purple-500 text-transparent  bg-clip-text">Arthur Aktamirov</h1>
+    <h3 class="sm:text-2xl text-lg p-2">Fullstack Developer</h3>
     <div class="flex p-2 gap-4">
       <a href="https://github.com/z4roc">
         <svg
@@ -38,7 +46,12 @@
 </section>
 <section
   id="skills"
-  class="h-screen relative overflow-hidden flex items-center justify-center"
+  class="h-screen p-4 relative sm:gap-10 items-center justify-center flex flex-col"
 >
-  <h1 class="text-6xl font-bold">Skills</h1>
+  <h1 class="sm:text-6xl text-4xl font-bold p-5">Technologies</h1>
+  <div class="grid gap-2 gap-x-10 md:gap-10  grid-cols-1 md:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4">
+    <CardItem header={"flutter"} icon={flutterIcon} tags={["Mobile"]} />
+   <CardItem header={"C# / .NET"} icon={csharpIcon} tags={["Server", "Desktop", "Web"]} />
+    <CardItem header={"NodeJS"} icon={nodeIcon} tags={["Mobile"]} />
+  </div>
 </section>
