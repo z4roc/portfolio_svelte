@@ -3,7 +3,7 @@
   let src = "./images/logoWhite.png";
 </script>
 
-<div class="bg-background bg-opacity-50">
+<div class="bg-background bg-opacity-50 flex flex-col gap-20 sm:gap-0">
   <video
     src="./videos/bg.mp4"
     class="object-cover fixed w-full h-full"
@@ -23,8 +23,8 @@
           </label>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
-            <li><a href="/projects">Portfolio</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="mailto:arthur@aktamirov.de">Contact</a></li>
           </ul>
         </div>
       <div class="flex-1 navbar-end sm:navbar-start">
@@ -36,7 +36,7 @@
         <ul class="menu sm:menu-horizontal menu-sm dropdown-content  px-1">
           <li><a href="/projects" class=" text-white text-xl">Projects</a></li>
           <li>
-            <a href="/about" class="text-white text-xl">About</a>
+            <a href="mailto:arthur@aktamirov.de" class="text-white text-xl">Contact</a>
           </li>
         </ul>
       </div>

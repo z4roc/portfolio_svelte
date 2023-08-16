@@ -1,20 +1,19 @@
 <script lang="ts">
   import CardItem from "../CardItem.svelte";
-
-  let flutterIcon = "./images/icons/flutter.png"
-  let csharpIcon = "./images/icons/csharp.png"
-  let nodeIcon = "./images/icons/nodejs.png"
+  import { dartIcon, javaIcon, csharpIcon, jsIcon, flutterIcon, dotNetIcon, nodeJsIcon, reactIcon, firebaseIcon, mySqlIcon } from "../images/icons/svgs"
 </script>
+
 
 <section
   id="landing"
-  class="h-screen -mt-10 relative overflow-hidden flex items-center justify-center"
+  class="h-screen -mt-10 sm:relative sm:overflow-hidden flex items-center justify-center"
 >
-  <div class="-top-10">
-    <h3 class="sm:text-4xl text-2xl p-2 font-semibold">Hi! I'm</h3>
-    <h1 class="sm:text-8xl text-4xl p-4 font-bold bg-gradient-to-r from-cyan-300 to-purple-500 text-transparent  bg-clip-text">Arthur Aktamirov</h1>
-    <h3 class="sm:text-2xl text-lg p-2">Fullstack Developer</h3>
-    <div class="flex p-2 gap-4">
+  <div class="-top-10 relative">
+    <h3 class="sm:text-4xl text-2xl md:p-2 pl-5 pb-4 font-semibold">Hi! I'm</h3>
+    <span class="sm:text-8xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-r from-cyan-300 to-purple-500 text-transparent  bg-clip-text">Arthur</span>
+    <span class="sm:text-8xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-r from-purple-500 to-cyan-300 text-transparent  bg-clip-text">"ZAROC"</span>
+    <h3 class="sm:text-2xl text-lg md:p-2 pl-5 pt-4">Fullstack Developer</h3>
+    <div class="flex p-5 gap-4">
       <a href="https://github.com/z4roc">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,12 +45,25 @@
 </section>
 <section
   id="skills"
-  class="h-screen p-4 relative sm:gap-10 items-center justify-center flex flex-col"
+  class="h-screen p-4 sm:relative sm:gap-10 items-center justify-center flex flex-col"
 >
-  <h1 class="sm:text-6xl text-4xl font-bold p-5">Technologies</h1>
-  <div class="grid gap-2 gap-x-10 md:gap-10  grid-cols-1 md:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4">
-    <CardItem header={"flutter"} icon={flutterIcon} tags={["Mobile"]} />
-   <CardItem header={"C# / .NET"} icon={csharpIcon} tags={["Server", "Desktop", "Web"]} />
-    <CardItem header={"NodeJS"} icon={nodeIcon} tags={["Mobile"]} />
+  <h1 class="xl:text-6xl sm:text-4xl text-xl font-bold relative xl:p-5 p-1">Programming Languages</h1>
+  <div class="grid gap-5 gap-x-10 md:gap-10  grid-cols-1 md:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4">
+    <CardItem header={"C#"} icon={csharpIcon} tags={["Server", "Desktop", "Web"]}/>
+    <CardItem header={"Dart"} icon={dartIcon} tags={["Mobile"]}/>
+    <CardItem header={"Java"} icon={javaIcon} tags={["Server", "Desktop"]}/>    
+    <CardItem header={"JavaScript"} icon={jsIcon} tags={["Server", "Web"]}/>    
+  </div>
+  <h1 class="xl:text-6xl text-xl sm:text-4xl font-bold relative xl:p-5 p-1">Frameworks</h1>
+  <div class="grid gap-5 gap-x-10 md:gap-10  grid-cols-1 md:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4">
+    <CardItem header={"flutter"} icon={flutterIcon} tags={["Server", "Desktop", "Web"]}/>
+    <CardItem header={".NET"} icon={dotNetIcon} tags={["Mobile"]}/>
+    <CardItem header={"nodeJS"} icon={nodeJsIcon} tags={["Server", "Desktop"]}/>    
+    <CardItem header={"React"} icon={reactIcon} tags={["Server", "Web"]}/>    
+  </div>
+  <h1 class="xl:text-6xl text-xl sm:text-4xl font-bold relative xl:p-5 p-1">Databases</h1>
+  <div class="grid gap-5 md:gap-10  grid-cols-1 md:grid-cols-2  xl:grid-cols-2 2xl:grid-cols-2">
+    <CardItem header={"Firebase"} icon={firebaseIcon} tags={["Server", "Desktop", "Web"]}/>
+    <CardItem header={"MySQL"} icon={mySqlIcon} tags={["Mobile"]}/> 
   </div>
 </section>
