@@ -1,9 +1,7 @@
 <script lang="ts">
   import "../app.css";
   let src = "./images/logoWhite.png";
-</script>
-
-<div class="bg-background bg-opacity-50 flex flex-col gap-20 sm:gap-0">
+  `
   <video
     src="./videos/bg.mp4"
     class="object-cover fixed w-full h-full"
@@ -11,11 +9,15 @@
     loop
     muted
   >
-    <track kind="captions" />
-  </video>
+  `;
+</script>
+
+<div
+  class="bg-gradient-to-r from-background via-black to-background flex flex-col gap-20"
+>
   <div class="sm:p-6 p-2 sticky">
     <div
-      class="navbar glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 text-opacity-100"
+      class="navbar rounded-lg glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 text-opacity-100"
     >
       <div class="dropdown block sm:hidden">
         <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -35,10 +37,10 @@
         </label>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-background rounded-box w-52"
         >
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="mailto:arthur@aktamirov.de">Contact</a></li>
+          <li><a href="/projects">Projekte</a></li>
+          <li><a href="mailto:arthur@aktamirov.de">Kontakt</a></li>
         </ul>
       </div>
       <div class="flex-1 navbar-end sm:navbar-start">
@@ -48,10 +50,10 @@
       </div>
       <div class="flex-none hidden sm:block">
         <ul class="menu sm:menu-horizontal menu-sm dropdown-content px-1">
-          <li><a href="/projects" class=" text-white text-xl">Projects</a></li>
+          <li><a href="/projects" class=" text-white text-xl">Projekte</a></li>
           <li>
             <a href="mailto:arthur@aktamirov.de" class="text-white text-xl"
-              >Contact</a
+              >Kontakt</a
             >
           </li>
         </ul>

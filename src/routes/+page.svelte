@@ -1,5 +1,6 @@
 <script>
   import CardItem from "../CardItem.svelte";
+  import { scale, fade, slide, crossfade, fly } from "svelte/transition";
   import hljs from "highlight.js";
   onMount(() => {
     const rotate = () => {
@@ -84,10 +85,10 @@
       <h3
         class="sm:text-3xl lg:text-4xl text-2xl md:p-2 pl-5 pb-4 font-semibold"
       >
-        Hi! I'm
+        Hallo! Ich bin
       </h3>
       <span
-        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-tl from-gray-600 to-white text-transparent bg-clip-text"
+        class="xl:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-tl from-gray-600 to-white text-transparent bg-clip-text"
         >Arthur</span
       >
       <span
@@ -95,10 +96,10 @@
         >'ZAROC'</span
       >
       <span
-        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-br from-gray-600 to-white text-transparent bg-clip-text"
+        class="xl:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-br from-gray-600 to-white text-transparent bg-clip-text"
         >Aktamirov</span
       >
-      <h3 class="lg:text-2xl sm:text-xl text-lg md:p-2 pl-5 pt-4">
+      <h3 class="xl:text-2xl sm:text-xl text-lg md:p-2 pl-5 pt-4">
         Fullstack Developer
       </h3>
       <div class="flex p-5 gap-4">
@@ -118,7 +119,7 @@
         <a href="https://www.linkedin.com/in/arthur-aktamirov">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-7 w-7 hover:fill-slate-500"
+            class="h-7 w-7 hover:fill-gray-500"
             fill="currentColor"
             style="color: #FFFFFF"
             viewBox="0 0 24 24"
@@ -132,12 +133,18 @@
     </div>
     <div class="flex items-center justify-center">
       <div
-        class="mockup-code transform glass transition-all ease-in-out duration-500 bg-gradient-to-r to-cyan-400/10 from-purple-500/10 relative lg:m-20 w-96 h-60 min-w-0 max-w-min md:w-fit xl:w-max"
+        class="mockup-code glass
+       bg-gradient-to-bl from-cyan-400/10 via-accent/10 to-purple-500/10
+      xl:m-20 h-60 min-w-0 w-full"
       >
-        <pre><code
-            class="p-0 m-0 transform text-sm md:text-lg xl:text-xl transition-all ease-in-out duration-500"
-            >{@html currentCodeHtml}</code
-          ></pre>
+        {#key currentCodeHtml}
+          <pre><code
+              in:fade={{ duration: 400, delay: 500 }}
+              out:fade={{ duration: 100, delay: 400 }}
+              class="text-md lg:text-lg xl:text-xl"
+              >{@html currentCodeHtml}</code
+            ></pre>
+        {/key}
       </div>
     </div>
   </div>
@@ -147,7 +154,7 @@
   class="h-min p-4 lg:relative sm:gap-10 items-center justify-center flex flex-col"
 >
   <h1 class="xl:text-6xl sm:text-4xl text-xl font-bold relative xl:p-5 p-1">
-    Programming Languages
+    Programmiersprachen
   </h1>
   <div
     class="grid gap-5 gap-x-10 md:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
@@ -181,7 +188,7 @@
     <CardItem header={"React"} icon={reactIcon} tags={["Server", "Web"]} />
   </div>
   <h1 class="xl:text-6xl text-xl sm:text-4xl font-bold relative xl:p-5 p-1">
-    Databases
+    Datenbanken
   </h1>
   <div
     class="grid gap-5 md:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
