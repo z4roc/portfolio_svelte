@@ -1,9 +1,25 @@
 <script>
-  // @ts-ignore
-  import Prism, { languages } from "prismjs";
-  import loadLanguages from "prismjs/components/index";
   import CardItem from "../CardItem.svelte";
-  import CodeBlock from "../CodeBlock.svelte";
+  import hljs from "highlight.js";
+  onMount(() => {
+    const rotate = () => {
+      if (currentIndex >= codeBlocks.length - 1) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
+      currentCodeHtml = hljs.highlight(codeBlocks[currentIndex].code, {
+        language: codeBlocks[currentIndex].lang,
+      }).value;
+    };
+
+    const interval = setInterval(rotate, 2000);
+    rotate();
+
+    return () => clearInterval(interval);
+  });
+
+  // @ts-ignore
   import {
     dartIcon,
     javaIcon,
@@ -16,21 +32,45 @@
     firebaseIcon,
     mySqlIcon,
   } from "../images/icons/svgs";
-
-  loadLanguages(["csharp"]);
+  import { onMount } from "svelte";
 
   let codeBlocks = [
     {
       lang: "csharp",
       code: `class Program {\n\tstatic void Main(string[] args) {\n\t\tConsole.WriteLine("Welcome!");\n\t}\n  }`,
     },
+    {
+      lang: "javascript",
+      code: `console.log('Welcome!');`,
+    },
+    {
+      lang: "java",
+      code: `class Program {\n\tstatic void Main(String[] args) {\n\t\tSystem.out.println("Welcome!");\n\t}\n  }`,
+    },
+    {
+      lang: "dart",
+      code: `void main(String[] args) {\n\tprint("Welcome")\n  }`,
+    },
+    {
+      lang: "jsx",
+      code: `import React from 'react';
+  export default const App = () => {
+    return (
+      <h1>Welcome!</h1>
+    );
+  };`,
+    },
   ];
-
-  let code = codeBlocks[0];
+  let currentIndex = 0;
+  let code = codeBlocks[currentIndex];
+  let currentCodeHtml = hljs.highlight(code.code, {
+    language: code.lang,
+  }).value;
 </script>
 
 <svelte:head>
   <link href="./prism-one-dark.css" rel="stylesheet" />
+  <link href="./hljs-theme.css" rel="stylesheet" />
 </svelte:head>
 
 <section
@@ -47,12 +87,16 @@
         Hi! I'm
       </h3>
       <span
-        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-r from-cyan-300 to-purple-500 text-transparent bg-clip-text"
+        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-tl from-gray-600 to-white text-transparent bg-clip-text"
         >Arthur</span
       >
       <span
         class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-r from-purple-500 to-cyan-300 text-transparent bg-clip-text"
-        >"ZAROC"</span
+        >'ZAROC'</span
+      >
+      <span
+        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-br from-gray-600 to-white text-transparent bg-clip-text"
+        >Aktamirov</span
       >
       <h3 class="lg:text-2xl sm:text-xl text-lg md:p-2 pl-5 pt-4">
         Fullstack Developer
@@ -88,14 +132,11 @@
     </div>
     <div class="flex items-center justify-center">
       <div
-        class="mockup-code glass bg-gradient-to-r to-cyan-400/10 from-purple-500/10 relative lg:m-20 h-fit min-w-0 max-w-min md:w-fit xl:w-max"
+        class="mockup-code transform glass transition-all ease-in-out duration-500 bg-gradient-to-r to-cyan-400/10 from-purple-500/10 relative lg:m-20 w-96 h-60 min-w-0 max-w-min md:w-fit xl:w-max"
       >
-        <pre><code class="p-0 m-0 text-sm md:text-lg xl:text-xl"
-            >{@html Prism.highlight(
-              code.code,
-              Prism.languages[code.lang],
-              code.lang
-            )}</code
+        <pre><code
+            class="p-0 m-0 transform text-sm md:text-lg xl:text-xl transition-all ease-in-out duration-500"
+            >{@html currentCodeHtml}</code
           ></pre>
       </div>
     </div>
