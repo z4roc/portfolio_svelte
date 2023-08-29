@@ -27,3 +27,12 @@ export const mySqlIcon =
 
 export const discordJsIcon =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-plain.svg";
+
+export const githubIcon =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
+
+export const svelteIcon =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-plain.svg";
+
+export const tailwindIcon =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg";

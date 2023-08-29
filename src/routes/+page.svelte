@@ -32,6 +32,8 @@
     reactIcon,
     firebaseIcon,
     mySqlIcon,
+    svelteIcon,
+    tailwindIcon,
   } from "../images/icons/svgs";
   import { onMount } from "svelte";
 
@@ -60,6 +62,10 @@
       <h1>Welcome!</h1>
     );
   };`,
+    },
+    {
+      lang: "sql",
+      code: `SELECT GREETING FROM PAGE;`,
     },
   ];
   let currentIndex = 0;
@@ -153,12 +159,10 @@
   id="skills"
   class="h-min p-4 lg:relative sm:gap-10 items-center justify-center flex flex-col"
 >
-  <h1 class="xl:text-6xl sm:text-4xl text-xl font-bold relative xl:p-5 p-1">
+  <h1 class="xl:text-6xl sm:text-4xl text-2xl font-bold relative xl:p-5 p-3">
     Programmiersprachen
   </h1>
-  <div
-    class="grid gap-5 gap-x-10 md:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
-  >
+  <div class="flex flex-wrap gap-5 flex-1 justify-center">
     <CardItem
       header={"C#"}
       icon={csharpIcon}
@@ -168,16 +172,14 @@
     <CardItem header={"Java"} icon={javaIcon} tags={["Server", "Desktop"]} />
     <CardItem header={"JavaScript"} icon={jsIcon} tags={["Server", "Web"]} />
   </div>
-  <h1 class="xl:text-6xl text-xl sm:text-4xl font-bold relative xl:p-5 p-1">
+  <h1 class="xl:text-6xl text-2xl sm:text-4xl font-bold relative xl:p-5 p-3">
     Frameworks
   </h1>
-  <div
-    class="grid gap-5 gap-x-10 md:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
-  >
+  <div class="flex flex-wrap gap-5 flex-1 justify-center">
     <CardItem
       header={"flutter"}
       icon={flutterIcon}
-      tags={["Server", "Desktop", "Web"]}
+      tags={["Server", "Desktop", "Web", "UI"]}
     />
     <CardItem header={".NET"} icon={dotNetIcon} tags={["Mobile"]} />
     <CardItem
@@ -186,13 +188,13 @@
       tags={["Server", "Desktop"]}
     />
     <CardItem header={"React"} icon={reactIcon} tags={["Server", "Web"]} />
+    <CardItem header={"Svelte"} icon={svelteIcon} tags={["Server", "Web"]} />
+    <CardItem header={"Tailwind"} icon={tailwindIcon} tags={["UI", "Web"]} />
   </div>
-  <h1 class="xl:text-6xl text-xl sm:text-4xl font-bold relative xl:p-5 p-1">
+  <h1 class="xl:text-6xl text-2xl sm:text-4xl font-bold relative xl:p-5 p-3">
     Datenbanken
   </h1>
-  <div
-    class="grid gap-5 md:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2"
-  >
+  <div class="flex flex-wrap gap-5 flex-1 justify-center">
     <CardItem
       header={"Firebase"}
       icon={firebaseIcon}
