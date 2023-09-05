@@ -1,6 +1,6 @@
 <script>
   import CardItem from "../CardItem.svelte";
-  import { scale, fade, slide, crossfade, fly } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import hljs from "highlight.js";
   onMount(() => {
     const rotate = () => {
