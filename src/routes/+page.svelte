@@ -85,7 +85,7 @@
   class="h-screen -mt-10 sm:relative sm:overflow-hidden flex items-center justify-center"
 >
   <div
-    class="-top-10 md:top-0 lg:-top-10 relative grid grid-cols-1 md:grid-cols-2 p-10"
+    class="-top-10 md:top-0 lg:-top-10 relative grid grid-cols-1 w-full md:grid-cols-2 p-10"
   >
     <div>
       <h3
@@ -98,7 +98,7 @@
         >Arthur</span
       >
       <span
-        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-r from-purple-500 to-cyan-300 text-transparent bg-clip-text"
+        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-r shine text-transparent bg-clip-text"
         >'ZAROC'</span
       >
       <span
