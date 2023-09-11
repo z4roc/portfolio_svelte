@@ -17,7 +17,7 @@
   let projects = [
     {
       name: "ValStore",
-      stack: ["flutter", "Firebase"],
+      stack: ["Flutter", "Firebase", "Rest-API"],
       description:
         "Eine App erstellt mit flutter, um den Shop vom Spiel 'VALORANT' am Handy anschauen zu können",
       image: valstoreImg,
@@ -26,15 +26,16 @@
     },
     {
       name: "Ausbildungsberichte",
-      stack: ["flutter", "Firebase"],
+      stack: ["Flutter", "Firebase"],
       description:
-        "Eine App erstellt mit flutter, um meine Ausbildungsberichte am Handy und im Web schreiben zu können.",
+        "Eine App erstellt mit flutter, um meine Ausbildungsberichte am Handy und im Web schreiben zu können und sie anschließend als PDF zu exportieren.",
       image: flutterIcon,
       link: "https://berichte.aktamirov.de",
+      code: "https://github.com/z4roc/berichtverwaltung_flutter",
     },
     {
       name: "Discord Bot",
-      stack: ["JavaScript", "nodeJs"],
+      stack: ["JavaScript", "NodeJs"],
       description: "Ein kleiner Discord Bot geschrieben in JavaScript",
       image: discordJsIcon,
       code: "https://github.com/z4roc",
@@ -59,10 +60,17 @@
     {
       name: "Portfolio",
       stack: ["TypeScript", "Svelte", "Tailwind"],
-      description: ["Das Portfolio hier."],
+      description: "Mein Portfolio.",
       image: svelteIcon,
       code: "https://github.com/z4roc/portfolio_svelte",
       link: "https://aktamirov.de",
+    },
+    {
+      name: "FirePass",
+      stack: ["Flutter", "Firebase"],
+      description: ["Ein kleiner Passwort Manager erstellt mit Flutter."],
+      image: flutterIcon,
+      code: "https://github.com/z4roc/firepass",
     },
   ];
 </script>
@@ -71,7 +79,7 @@
   id="projects"
   class="md:h-full h-full md:p-20 flex flex-col items-center justify-center md:gap-10 gap-5"
 >
-  <h1 class="relative text-3xl md:text-4xl lg:text-5xl font-bold">Projects</h1>
+  <h1 class="relative text-3xl md:text-4xl lg:text-5xl font-bold">Projekte</h1>
 
   <div
     class="relative grid gap-10 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 auto-cols-auto"
