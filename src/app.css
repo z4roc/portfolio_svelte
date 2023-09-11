@@ -31,7 +31,6 @@ body {
 .shine {
   display: block;
   font-weight: bold;
-  font-size: 50px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   --start-color-1: #00e0d9;
@@ -40,7 +39,15 @@ body {
   --end-color-2: #facc29;
   --start-color-3: #ff0080;
   --end-color-3: #7527c4;
-  background-image: linear-gradient(-45deg, var(--start-color-1), var(--end-color-1), var(--start-color-2), var(--end-color-2), var(--start-color-3), var(--end-color-3));
+  background-image: linear-gradient(
+    -45deg,
+    var(--start-color-1),
+    var(--end-color-1),
+    var(--start-color-2),
+    var(--end-color-2),
+    var(--start-color-3),
+    var(--end-color-3)
+  );
   animation: gradient 5s ease-in-out infinite;
   background-size: 400% 400%;
 }
@@ -49,11 +56,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
-  
+
   50% {
     background-position: 100% 50%;
   }
-  
+
   100% {
     background-position: 0% 50%;
   }

@@ -37,9 +37,10 @@
         </label>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-background rounded-box w-52"
+          class="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 rounded-box w-52"
         >
           <li><a href="/projects">Projekte</a></li>
+          <li><a href="/Lebenslauf.pdf">CV</a></li>
           <li><a href="mailto:arthur@aktamirov.de">Kontakt</a></li>
         </ul>
       </div>
@@ -51,6 +52,7 @@
       <div class="flex-none hidden sm:block">
         <ul class="menu sm:menu-horizontal menu-sm dropdown-content px-1">
           <li><a href="/projects" class=" text-white text-xl">Projekte</a></li>
+          <li><a href="/Lebenslauf.pdf" class="text-white text-xl">CV</a></li>
           <li>
             <a href="mailto:arthur@aktamirov.de" class="text-white text-xl"
               >Kontakt</a

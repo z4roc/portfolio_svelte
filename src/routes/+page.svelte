@@ -52,7 +52,7 @@
     },
     {
       lang: "dart",
-      code: `void main(String[] args) {\n\tprint("Welcome")\n  }`,
+      code: `void main(String[] args) {\n\tprint("Welcome");\n  }`,
     },
     {
       lang: "jsx",
@@ -85,11 +85,11 @@
   class="h-screen -mt-10 sm:relative sm:overflow-hidden flex items-center justify-center"
 >
   <div
-    class="-top-10 md:top-0 lg:-top-10 relative grid grid-cols-1 w-full md:grid-cols-2 p-10"
+    class="-top-10 md:top-0 lg:-top-10 relative grid grid-cols-1 w-full gap-5 md:grid-cols-2 p-10"
   >
     <div>
       <h3
-        class="sm:text-3xl lg:text-4xl text-2xl md:p-2 pl-5 pb-4 font-semibold"
+        class="sm:text-3xl lg:text-4xl text-2xl md:p-2 pl-5 md:pb-4 font-semibold"
       >
         Hallo! Ich bin
       </h3>
