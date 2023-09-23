@@ -17,7 +17,7 @@
 >
   <div class="sm:p-6 p-2 sticky">
     <div
-      class="navbar rounded-lg glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 text-opacity-100"
+      class="navbar z-50 rounded-lg glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 text-opacity-100"
     >
       <div class="flex-1 navbar-start sm:navbar-start">
         <a class="btn btn-ghost normal-case text-2xl" href="/">
@@ -25,7 +25,7 @@
         </a>
       </div>
       <div class="flex-none hidden sm:block">
-        <ul class="menu sm:menu-horizontal menu-sm dropdown-content px-1">
+        <ul class="menu sm:menu-horizontal z-[1] menu-sm dropdown-content px-1">
           <li><a href="/projects" class=" text-white text-xl">Projekte</a></li>
           <li>
             <a href="/Lebenslauf_DE.pdf" class="text-white text-xl">CV</a>
@@ -37,7 +37,7 @@
           </li>
         </ul>
       </div>
-      <div class="dropdown dropdown-end block sm:hidden">
+      <div class="dropdown z-50 dropdown-end block sm:hidden">
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,9 +57,11 @@
           tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 rounded-box w-52"
         >
-          <li><a href="/projects">Projekte</a></li>
-          <li><a href="/Lebenslauf_DE.pdf">CV</a></li>
-          <li><a href="mailto:arthur@aktamirov.de">Kontakt</a></li>
+          <li class="z-[100]"><a href="/projects">Projekte</a></li>
+          <li class="z-[100]"><a href="/Lebenslauf_DE.pdf">CV</a></li>
+          <li class="z-[100]">
+            <a href="mailto:arthur@aktamirov.de">Kontakt</a>
+          </li>
         </ul>
       </div>
     </div>

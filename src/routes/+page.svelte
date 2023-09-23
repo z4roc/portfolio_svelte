@@ -86,10 +86,10 @@
 
 <section
   id="landing"
-  class="h-screen -z-10 sm:relative sm:overflow-hidden flex items-center justify-center"
+  class="h-screen sm:relative sm:overflow-hidden flex items-center justify-center"
 >
   <div
-    class="-top-10 md:top-0 lg:-top-10 relative grid grid-cols-1 w-full gap-5 md:grid-cols-2 p-10"
+    class="-top-10 z-[-1] sm:z-0xx md:top-0 lg:-top-10 relative grid grid-cols-1 w-full gap-5 md:grid-cols-2 p-10"
   >
     <div>
       <h3
