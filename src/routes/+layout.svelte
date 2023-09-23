@@ -19,7 +19,25 @@
     <div
       class="navbar rounded-lg glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 text-opacity-100"
     >
-      <div class="dropdown block sm:hidden">
+      <div class="flex-1 navbar-start sm:navbar-start">
+        <a class="btn btn-ghost normal-case text-2xl" href="/">
+          <img {src} alt="icon" height="200" width="200" />
+        </a>
+      </div>
+      <div class="flex-none hidden sm:block">
+        <ul class="menu sm:menu-horizontal menu-sm dropdown-content px-1">
+          <li><a href="/projects" class=" text-white text-xl">Projekte</a></li>
+          <li>
+            <a href="/Lebenslauf_DE.pdf" class="text-white text-xl">CV</a>
+          </li>
+          <li>
+            <a href="mailto:arthur@aktamirov.de" class="text-white text-xl"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-end block sm:hidden">
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,24 +60,6 @@
           <li><a href="/projects">Projekte</a></li>
           <li><a href="/Lebenslauf_DE.pdf">CV</a></li>
           <li><a href="mailto:arthur@aktamirov.de">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="flex-1 navbar-end sm:navbar-start">
-        <a class="btn btn-ghost normal-case text-2xl" href="/">
-          <img {src} alt="icon" height="200" width="200" />
-        </a>
-      </div>
-      <div class="flex-none hidden sm:block">
-        <ul class="menu sm:menu-horizontal menu-sm dropdown-content px-1">
-          <li><a href="/projects" class=" text-white text-xl">Projekte</a></li>
-          <li>
-            <a href="/Lebenslauf_DE.pdf" class="text-white text-xl">CV</a>
-          </li>
-          <li>
-            <a href="mailto:arthur@aktamirov.de" class="text-white text-xl"
-              >Kontakt</a
-            >
-          </li>
         </ul>
       </div>
     </div>

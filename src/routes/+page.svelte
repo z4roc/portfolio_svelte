@@ -76,33 +76,37 @@
 </script>
 
 <svelte:head>
-  <link href="./prism-one-dark.css" rel="stylesheet" />
   <link href="./hljs-theme.css" rel="stylesheet" />
+  <title>Arthur Aktamirov - Fullstack Developer</title>
+  <meta
+    name="description"
+    content="Arthur 'ZAROC' Aktamirov, ein Fullstack developer speyialisiert in .NET, NodeJS / React und Flutter. GitHub: https://github.com/z4roc, LinkedIn: https://linkedin.com/arthur-aktamirov"
+  />
 </svelte:head>
 
 <section
   id="landing"
-  class="h-screen -mt-10 sm:relative sm:overflow-hidden flex items-center justify-center"
+  class="h-screen -z-10 sm:relative sm:overflow-hidden flex items-center justify-center"
 >
   <div
     class="-top-10 md:top-0 lg:-top-10 relative grid grid-cols-1 w-full gap-5 md:grid-cols-2 p-10"
   >
     <div>
       <h3
-        class="sm:text-3xl lg:text-4xl text-2xl md:p-2 pl-5 md:pb-4 font-semibold"
+        class="sm:text-3xl p-2 lg:text-4xl text-2xl md:p-2 pl-5 md:pb-4 font-semibold"
       >
         Hallo! Ich bin
       </h3>
       <span
-        class="xl:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-tl from-gray-600 to-white text-transparent bg-clip-text"
+        class="xl:text-8xl sm:text-6xl text-5xl md:p-4 pl-10 font-bold bg-gradient-to-tl from-gray-600 to-white text-transparent bg-clip-text"
         >Arthur</span
       >
       <span
-        class="lg:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-r shine text-transparent bg-clip-text"
+        class="lg:text-8xl sm:text-6xl text-5xl md:p-4 pl-10 font-bold bg-gradient-to-r shine text-transparent bg-clip-text"
         >'ZAROC'</span
       >
       <span
-        class="xl:text-8xl sm:text-6xl text-4xl md:p-4 pl-10 font-bold bg-gradient-to-br from-gray-600 to-white text-transparent bg-clip-text"
+        class="xl:text-8xl sm:text-6xl text-5xl md:p-4 pl-10 font-bold bg-gradient-to-br from-gray-600 to-white text-transparent bg-clip-text"
         >Aktamirov</span
       >
       <h3 class="xl:text-2xl sm:text-xl text-lg md:p-2 pl-5 pt-4">

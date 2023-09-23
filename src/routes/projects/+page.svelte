@@ -75,6 +75,14 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Arthur Aktamirov - Alle Projekte</title>
+  <meta
+    name="description"
+    content="Portfolio von Arthur Aktamirov. Enthält alle aktuell öffentlichen Projekte auf GitHub."
+  />
+</svelte:head>
+
 <section
   id="projects"
   class="md:h-full h-full md:p-20 flex flex-col items-center justify-center md:gap-10 gap-5"
