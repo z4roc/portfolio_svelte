@@ -81,6 +81,8 @@
     name="description"
     content="Portfolio von Arthur Aktamirov. Enthält alle aktuell öffentlichen Projekte auf GitHub."
   />
+
+  <link rel="icon" href="images/favicon.png" />
 </svelte:head>
 
 <section

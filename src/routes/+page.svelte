@@ -80,8 +80,9 @@
   <title>Arthur Aktamirov - Fullstack Developer</title>
   <meta
     name="description"
-    content="Arthur 'ZAROC' Aktamirov, ein Fullstack developer speyialisiert in .NET, NodeJS / React und Flutter. GitHub: https://github.com/z4roc, LinkedIn: https://linkedin.com/arthur-aktamirov"
+    content="Arthur 'ZAROC' Aktamirov, ein Fullstack developer spezialisiert in .NET, NodeJS / React und Flutter. GitHub: https://github.com/z4roc, LinkedIn: https://linkedin.com/arthur-aktamirov"
   />
+  <link rel="icon" href="images/favicon.png" />
 </svelte:head>
 
 <section
