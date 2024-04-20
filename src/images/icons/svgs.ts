@@ -32,7 +32,7 @@ export const githubIcon =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
 
 export const svelteIcon =
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-plain.svg";
+  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg";
 
 export const tailwindIcon =
   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg";
