@@ -55,7 +55,6 @@
           class="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 rounded-box w-52"
         >
           <li class="z-[100]"><a href="/projects">Projekte</a></li>
-          <li class="z-[100]"><a href="/Lebenslauf_DE.pdf">CV</a></li>
           <li class="z-[100]">
             <a href="mailto:arthur@aktamirov.de">Kontakt</a>
           </li>
