@@ -28,9 +28,6 @@
         <ul class="menu sm:menu-horizontal z-[1] menu-sm dropdown-content px-1">
           <li><a href="/projects" class=" text-white text-xl">Projekte</a></li>
           <li>
-            <a href="/Lebenslauf_DE.pdf" class="text-white text-xl">CV</a>
-          </li>
-          <li>
             <a href="mailto:arthur@aktamirov.de" class="text-white text-xl"
               >Kontakt</a
             >

@@ -35,4 +35,4 @@ export const svelteIcon =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-plain.svg";
 
 export const tailwindIcon =
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg";
+  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg";
