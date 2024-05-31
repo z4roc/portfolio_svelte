@@ -12,7 +12,8 @@
 
   let globe = "/images/globe.svg";
   let svelte = "/images/svelte.svg";
-  let valstoreImg = "/images/valstore.png";
+  let valstoreImg = "/images/Valstore_Icon.png";
+  let statifyImg = "/images/statify_icon.png";
 
   let projects = [
     {
@@ -34,11 +35,13 @@
       code: "https://github.com/z4roc/berichtverwaltung_flutter",
     },
     {
-      name: "Discord Bot",
-      stack: ["JavaScript", "NodeJs"],
-      description: "Ein kleiner Discord Bot geschrieben in JavaScript",
-      image: discordJsIcon,
-      code: "https://github.com/z4roc",
+      name: "Statify",
+      stack: ["NextJS", "React", "Rest-API", "Spotify-API"],
+      description:
+        "Eine NextJS Anwendung um die eigenen Spotify Statistiken zu sehen, aktuell noch in Beta. Kontaktiere mich für einen Zugang.",
+      image: statifyImg,
+      link: "https://statify.zaroc.de",
+      code: "https://github.com/z4roc/statify_next",
     },
     {
       name: "Prüfungsvorbereitung",

@@ -1,6 +1,6 @@
 <script lang="ts">
   import "../app.css";
-  let src = "./images/logoWhite.png";
+  let src = "./images/logo_2_white.png";
   `
   <video
     src="./videos/bg.mp4"
@@ -17,11 +17,12 @@
 >
   <div class="sm:p-6 p-2 sticky">
     <div
-      class="navbar z-50 rounded-lg glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 text-opacity-100"
+      class="navbar z-[100] rounded-lg glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 text-opacity-100"
     >
       <div class="flex-1 navbar-start sm:navbar-start">
         <a class="btn btn-ghost normal-case text-2xl" href="/">
-          <img {src} alt="icon" height="200" width="200" />
+          <img {src} alt="icon" height="60" width="60" class="mr-2" />
+          <h1>aktamirov.de</h1>
         </a>
       </div>
       <div class="flex-none hidden sm:block">
@@ -34,7 +35,7 @@
           </li>
         </ul>
       </div>
-      <div class="dropdown z-50 dropdown-end block sm:hidden">
+      <div class="dropdown dropdown-end block sm:hidden">
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +53,7 @@
         </label>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 rounded-box w-52"
+          class="menu menu-sm dropdown-content z-[100] mt-3 z-50 p-2 shadow glass bg-gradient-to-r from-cyan-400/10 to-purple-500/10 rounded-box w-52"
         >
           <li class="z-[100]"><a href="/projects">Projekte</a></li>
           <li class="z-[100]">
