@@ -120,7 +120,10 @@
         </div>
         <div class="pr-4 pb-4 card-actions justify-end flex gap-4">
           {#if project.link != null}
-            <a class="btn btn-md bg-gray-950" href={project.link}>
+            <a
+              class="btn btn-md bg-gray-950 text-white hover:text-black hover:bg-gray-200"
+              href={project.link}
+            >
               <img src={globe} height="22" width="22" alt="globe" />
               Website
             </a>

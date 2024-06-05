@@ -4,7 +4,7 @@
 
 /* Firefox */
 body {
-  @apply bg-gradient-to-r from-background via-black to-background;
+  @apply bg-gradient-to-r from-background via-black to-background text-white;
 }
 
 * {
